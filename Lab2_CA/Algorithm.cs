@@ -67,7 +67,7 @@ namespace Lab2_CA
             foreach (var point in pts)
             {
                 matrix[point.X, point.Y] = lvl;
-                //тут будет вызываться метод отрисовки
+                Drawer.PrintLvl(graphics_in, point.X, point.Y, lvl);
             }
             return true;
         }

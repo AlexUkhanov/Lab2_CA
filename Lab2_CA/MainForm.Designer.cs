@@ -28,22 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btClear = new System.Windows.Forms.Button();
             this.btExit = new System.Windows.Forms.Button();
+            this.btStart = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // btClear
-            // 
-            this.btClear.Location = new System.Drawing.Point(574, 12);
-            this.btClear.Name = "btClear";
-            this.btClear.Size = new System.Drawing.Size(75, 23);
-            this.btClear.TabIndex = 0;
-            this.btClear.Text = "Clear";
-            this.btClear.UseVisualStyleBackColor = true;
             // 
             // btExit
             // 
-            this.btExit.Location = new System.Drawing.Point(655, 12);
+            this.btExit.Location = new System.Drawing.Point(313, 12);
             this.btExit.Name = "btExit";
             this.btExit.Size = new System.Drawing.Size(75, 23);
             this.btExit.TabIndex = 2;
@@ -51,23 +42,34 @@
             this.btExit.UseVisualStyleBackColor = true;
             this.btExit.Click += new System.EventHandler(this.btExit_Click);
             // 
+            // btStart
+            // 
+            this.btStart.Location = new System.Drawing.Point(232, 12);
+            this.btStart.Name = "btStart";
+            this.btStart.Size = new System.Drawing.Size(75, 23);
+            this.btStart.TabIndex = 3;
+            this.btStart.Text = "Start/Clear";
+            this.btStart.UseVisualStyleBackColor = true;
+            this.btStart.Click += new System.EventHandler(this.btStart_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(779, 344);
+            this.ClientSize = new System.Drawing.Size(412, 373);
+            this.Controls.Add(this.btStart);
             this.Controls.Add(this.btExit);
-            this.Controls.Add(this.btClear);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "MainForm";
             this.Text = "Lab2 ";
+            this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.MainForm_MouseClick);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btClear;
         private System.Windows.Forms.Button btExit;
+        private System.Windows.Forms.Button btStart;
     }
 }
 
