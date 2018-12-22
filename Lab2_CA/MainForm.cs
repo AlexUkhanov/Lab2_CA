@@ -13,9 +13,16 @@ namespace Lab2_CA
 {
     public partial class MainForm : Form
     {
+        public static Graphics chessField;
         public MainForm()
         {
             InitializeComponent();
+            chessField = this.CreateGraphics();
+        }
+
+        private void btExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
